@@ -3,30 +3,95 @@ layout: 'default'
 title: 'Home'
 ---
 
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-	<h1>Welcome to your new site!</h1>
-	<p>
-		We've copied over the
-		<a href="https://github.com/docpad/twitter-bootstrap.docpad">
-			Twitter Bootstrap Skeleton
-		</a>
-		for you already, which is what you're currently viewing.
+<style type="text/css">
+	body{height: 1111px;}
+</style>
 
-		Step through the guide below and we'll walk you through the process of working with your first docpad website :-)
-	</p>
+ <div class="row" class="text-center">
+ 	<h2 class="slogan text-center">Don't Let an Eating Disorder Take Away Your Voice<a href="#trailerTarget"><sub>&darr;</sub></a></h2>
+ </div>
+ 
+<span class="play-icon">
+<svg
+version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" href="#trailerModal" role="button" data-toggle="modal" id="playIcon" onclick="play()"> <path
+id="video-5-icon" d="M243.391,166.834l215.748-42.766l-0.145-0.727L444.558,50.5l-363.4,72.035
+C63.07,126.12,50,141.985,50,160.424c0,16.312,0,242.407,0,242.407c0,32.351,26.318,58.669,58.668,58.669h294.664
+c32.35,0,58.668-26.318,58.668-58.669V167.575v-0.741H243.391z M422,402.831c0,10.294-8.374,18.669-18.668,18.669H108.668
+C98.374,421.5,90,413.125,90,402.831V261.765h332V402.831z M339.528,186.834l-34.931,34.931h-52.426l34.931-34.931H339.528z
+M395.225,80.668l41.139,27.529l-51.396,10.214l-41.17-27.55L395.225,80.668z M293.981,100.736l41.199,27.568l-51.394,10.213
+l-41.229-27.588L293.981,100.736z M192.625,120.827l41.257,27.608l-51.395,10.213L141.2,131.021L192.625,120.827z M183.77,186.834
+h52.426l-34.931,34.931h-52.426L183.77,186.834z M355.385,221.765l34.931-34.931h52.426l-34.931,34.931H355.385z M232.923,393.31
+V284.553l88.693,54.38L232.923,393.31z"/> </svg>
+<div id="trailerTarget">.</div>
+</span>
+<!-- Modal -->
+<div id="trailerModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+  	<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><iframe width="560" height="315" src="http://www.youtube.com/v/2t6cFTxLObI?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+    <div class="item"><iframe id="trailer-youtube" width="518" height="315" src="http://www.youtube.com/v/8xzdHQ6EukQ?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+  </div>
 </div>
 
-<!-- Example row of columns -->
+<script type="text/javascript">
+	// Get element holding the video (embed or object)
+var player = document.getElementById("trailer-youtube");
+
+//Create a simple function and check if player exists
+function play() {
+    if(player) {
+        player.playVideo();
+    }
+}
+
+function scrollDown(){
+	var objDiv = document.getElementById("body");
+	objDiv.scrollTop = objDiv.scrollHeight;
+}
+</script>
+
 <div class="row" class="text-center">
-	<div class="span6">
-		<h2>Docpad</h2>
-		<p>DocPad takes that good ol' simple approach of writing files and wraps it with the best modern innovations, providing an awesome intuitive, liberating and empowering solution for HTML5 web development.</p>
-		<p><a class="btn" href="https://github.com/bevry/docpad">Visit Website</a></p>
+	<div class="span12">
+		<h2 id="about">Invisible Weight</h2>
+		<h4>an Eating Disorder Documentary</h4>
+		<p>From award winning producer, Lew Goldstein, and recently recovered eating disorder survivor and television host, Kari Adams, this film features candid stories about eating disorders, body dysmorphic disorder, addiction and self harm. Director of Photography and YouTube Pulitzer Award winner Mark Jeevaratnam captures intimate interviews with girls, women and men who have suffered from or are currently struggling with eating disorders, addiction or self harm.</p>
+
+		<p>We are working closely in conjunction with New Jersey Assemblyman Reed Gusciora to introduce a bill to congress to mandate that all New Jersey Public Schools include eating disorder education in their curriculum as well as train educational staff members. We are starting with New Jersey and plan to take this initiative to a national level. We need support and funding for this important documentary that will coincide with the bill and be included as required viewing as a part of the eating disorder instruction.</p>
+
+		<p>Our goal with this documentary is two fold: 1) To deter young people from turning to an eating disorder to manage their feelings and emotions and 2) To show those suffering from eating disorders, low self-esteem, self harm and body dysmorphia that recovery IS possible.</p>
+
+		<p>**For EVERY dollar raised for the funding of this film, a portion will be donated to the FREED Foundation, an organization that helps to raise funds to assist eating disorder sufferers receive treatment if they can't afford it on their own and/or their insurance carriers won't cover them.</p>
+
+		<p>If you or someone you know suffers from this harmful and insidious disease, please give to this worthy cause that is inspired to help spread awareness about eating disorders and negative body image.</p>
+
+		<p>CAST MEMBERS: We are mostly filming everyday people who are either currently suffering from an eating disorder or who have recently recovered.  We also have some well-known names who will be appearing in the film such as Brian Cuban, brother of basketball's Mavericks Team Owner and co-host of ABC's Shark Tank Mark Cuban, and author and television host Joel Furhman and his daughter <a href="http://taliafuhrman.com/" target="_blank">Talia</a>.</p>
+
+		<p>In conjunction with interviews, it is our goal to follow 1 or 2 people who are currently suffering from an eating disorder and show their progress through the recovery process.  Unlike most documentaries about eating disorders, we will show a positive ending with folks recovering and talking about their healing process.  While we want to discourage young kids from developing an eating disorder, we also want to demonstrate that recovery from one is entirely possible.</p>
+
+		<p>KariLew Productions
+		-In conjunction with Kari Adams' <a href="http://getkillerconfidence.com/" target="_blank">GetKillerConfidence.com</a>, <a href="http://libelulaproductions.com/" target="_blank">Libelula Productions</a> and <a href="http://ponitv.com/" target="_blank">Poni TV <i class="icon-share"></i></a></p>
 	</div>
-	<div class="span6">
-		<h2>Twitter Bootstrap</h2>
-		<p>Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-		<p><a class="btn" href="http://twitter.github.com/bootstrap/">Visit Website</a></p>
-	</div>
+</div>
+<br/>
+<hr/>
+<br/>
+<div class="row" class="text-center">
+	<div class="span12 text-center pinterest" id="pin">
+		<a data-pin-do="embedBoard" href="http://pinterest.com/kariladams/invisible-documentary-the-weight-to-invisibility/" data-pin-scale-width="222" data-pin-scale-height="666" data-pin-board-width="1011"></a>
+	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 </div>
