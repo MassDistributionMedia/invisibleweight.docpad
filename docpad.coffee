@@ -16,6 +16,7 @@ docpadConfig = {
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
+				""
 			]
 
 			# The default title of our website

@@ -1,8 +1,10 @@
+body
+	overflow-x hidden
+
 a:hover
 	text-decoration none
 
 .bg	
-	//position absolute
 	z-index -1
 	width 100%
 	clear both
@@ -15,7 +17,6 @@ footer
 	margin -68px 0 0 0
 
 .slogan
-	//margin 43px 0 0 0
 	position absolute
 	top 33px
 	left 15%
@@ -82,10 +83,24 @@ footer i
 
 .fb-like
 	width 222px
-	margin 10px 0 0 132px
+	margin 10px 0 0 67px
+
+.MDM
+	position absolute
+	margin -93px 0 0 -110px
+	-moz-transition margin 2s
+    -webkit-transition margin 2s
+    -o-transition margin 2s
+    transition margin 2s
+
+.MDM:hover
+	margin -140px 0 0 -110px 
+
+.updated
+	margin 0 46px 0 0
 
 @media all and (max-width: 2002) and (min-width: 1110){
 	.slogan{
-		width 67%
+		width: 67%;
 	}
 }

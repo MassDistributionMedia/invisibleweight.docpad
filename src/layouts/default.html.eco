@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<!-- Our site title and description -->
-	<title><%= @getPreparedTitle() %></title>
+	<title>Invisible Weight. An Eating Disorder Documentary.</title>
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 	<meta name="author" content="<%= @site.author or '' %>" />
@@ -61,11 +61,11 @@
 					<% end %>
 					<li>
 						<a href="#about">About</a>
-					</li>
-					<li>
+					</li><li>
 						<a href="#trailerModal" role="button" data-toggle="modal" id="playIcon" onclick="play()">Trailers</a>
-					</li>
-					<li>
+					</li><li>
+						<a href="http://getkillerconfidence.com/forums/topic/invisible-the-weight-to-invisibility-the-documentary/">Forum</a>
+					</li><li>
 						<span href="#myModal" id="fundIt" role="button" data-toggle="modal"class="btn btn-primary"> Fund This! </span>
 					</li>
 					<li class="pull-right">
@@ -81,7 +81,7 @@
 		</section>
 		<footer>
 			 <p class="pull-left">&copy;<%- (new Date()).getFullYear() %> <a href="http://getkillerconfidence.com/" target="_blank">Kari Adams</a></a></p>
-			<p class="pull-right muted" title="<i class=icon-info-sign></i> <strong>Website Information</strong>" id="site_info-popo" data-html="true" data-trigger="hover" data-content="This website is designed, developed and hosted by Mass Distribution Media on a Nodejitsu server. Powered by DocPad." data-placement="top">
+			<p class="pull-right muted updated" title="<i class=icon-info-sign></i> <strong>Website Information</strong>" id="site_info-popo" data-html="true" data-trigger="hover" data-content="This website is designed, developed and hosted by Mass Distribution Media on a Nodejitsu server. Powered by DocPad." data-placement="top">
 				<i class="icon-info-sign"></i> Updated <%= @site.date.toISOString() %>
 			</p>
 		</footer>
@@ -99,5 +99,8 @@
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<span class="pull-right">
+		<a href="http://massdistributionmedia.com/" target="_blank"><img class="MDM" src="/images/logo-circle_MDM-red-131.png" alt="Mass Distribution Media red circle 	icon logo"/></a>
+	</span>
 </body>
 </html>
